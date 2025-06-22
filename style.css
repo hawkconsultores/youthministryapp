@@ -1,0 +1,213 @@
+body {
+  font-family: 'Montserrat', Arial, sans-serif;
+  background: #f5f5f5;
+  color: #222;
+  padding-top: 70px;
+} /* Padding for fixed header */
+.bg-primary-adventist { background: #003366 !important; color: #fff !important; }
+.bg-gold { background: #F7C331 !important; color: #003366 !important; }
+.bg-green { background: #009966 !important; color: #fff !important; }
+.text-primary-adventist { color: #003366 !important; }
+.text-gold { color: #F7C331 !important; }
+.text-green { color: #009966 !important; }
+.btn-gold { background: #F7C331; color: #003366; border-radius: 30px; border: none; }
+.btn-gold:hover { background: #e6b800; color: #fff; }
+.btn-outline-primary-adventist { border: 1.5px solid #003366; color: #003366; border-radius: 30px; }
+.btn-outline-primary-adventist:hover { background: #003366; color: #fff; }
+.btn-outline-gold { border: 1.5px solid #F7C331; color: #F7C331; border-radius: 30px; }
+.btn-outline-gold:hover { background: #F7C331; color: #003366; }
+.btn-outline-green { border: 1.5px solid #009966; color: #009966; border-radius: 30px; }
+.btn-outline-green:hover { background: #009966; color: #fff; }
+
+.hero-section {
+  min-height: 80vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-bg {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url('hero-phone-field.jpg') center center / cover no-repeat;
+  z-index: 0;
+}
+.hero-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(rgba(0,34,51,0.7), rgba(0,34,51,0.5));
+  z-index: 1;
+}
+.hero-section .container {
+  position: relative;
+  z-index: 2;
+}
+.hero-section h1, .hero-section p {
+  color: #003366;
+  text-shadow: none;
+}
+.hero-section .btn-gold {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+.hero-img-wrapper {
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.hero-img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+  position: relative;
+  z-index: 1;
+}
+.hero-overlay {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(0,51,102,0.45);
+  border-radius: 20px;
+  z-index: 2;
+}
+
+.navbar.bg-primary-adventist {
+  background: #003366 !important;
+}
+.navbar-brand span { font-weight: 700; font-size: 1.25rem; }
+.nav-link { color: #fff !important; font-weight: 500; }
+.nav-link:hover, .nav-link.active { color: #F7C331 !important; }
+
+.section-title {
+  font-weight: 700;
+  font-size: 2.25rem;
+  color: #003366;
+  border-bottom: 4px solid #F7C331;
+  display: inline-block;
+  padding-bottom: 0.25em;
+  margin-bottom: 1.5rem;
+}
+
+.features-section {
+  background: #fff;
+}
+.feature-card {
+  border: none;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px rgba(0,51,102,0.08);
+  transition: transform 0.18s;
+}
+.feature-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 4px 32px rgba(0,51,102,0.18);
+}
+.feature-icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-section {
+  background: #f5f5f5;
+}
+.timeline-vertical {
+  position: relative;
+  max-width: 700px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.timeline-vertical:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 6px;
+  background: #F7C331;
+  border-radius: 3px;
+  transform: translateX(-50%);
+}
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+.timeline-item:last-child { margin-bottom: 0; }
+.timeline-icon {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.7rem;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  border: 3px solid #fff;
+}
+.timeline-content {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,51,102,0.06);
+  padding: 1rem 1.5rem;
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-top: 0.5rem;
+  min-width: 220px;
+  width: calc(100% - 180px);
+  position: relative;
+  z-index: 1;
+}
+.timeline-date {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #003366;
+  margin-bottom: 0.2rem;
+  display: block;
+}
+@media (max-width: 991px) {
+  .timeline-content {
+    margin-left: 70px;
+    margin-right: 10px;
+    width: calc(100% - 90px);
+  }
+}
+@media (max-width: 768px) {
+  .hero-img-wrapper { max-width: 260px; }
+  .timeline-vertical:before { left: 24px; }
+  .timeline-icon { left: 24px; transform: none; }
+  .timeline-content { margin-left: 60px; margin-right: 0; width: calc(100% - 70px); }
+}
+@media (max-width: 576px) {
+  .hero-section { padding-top: 2.5rem; padding-bottom: 2.5rem; }
+  .section-title { font-size: 1.5rem; }
+  .timeline-content { padding: 0.75rem 0.8rem; font-size: 0.98rem; }
+}
+
+section {
+  margin-bottom: 2rem;
+}
+h2 {
+  font-weight: 700;
+  color: #2d8fd5;
+}
+.list-group-item {
+  border: none;
+  background: #f2f7fa;
+  margin-bottom: 0.5rem;
+  border-radius: 0.5rem;
+}
+footer {
+  background: #222;
+  color: #fff;
+}
+@media (max-width: 768px) {
+  .hero img {
+    max-height: 180px;
+  }
+}
