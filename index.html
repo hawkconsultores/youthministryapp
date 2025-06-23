@@ -89,9 +89,16 @@
   <section id="features" class="features-section py-5">
     <div class="container">
       <h2 class="text-center section-title mb-5">Key Features</h2>
-      <!-- Stage 1 -->
-      <div class="mb-5">
-        <h5 class="fw-bold mb-4"><i class="bi bi-flag-fill text-gold me-2"></i>Stage 1 – Ready by July 2025</h5>
+      <!-- Stage 1 (Accordion) -->
+<div class="accordion mb-5" id="stage1Accordion">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingStage1">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseStage1" aria-expanded="true" aria-controls="collapseStage1">
+        <i class="bi bi-flag-fill text-gold me-2"></i>Stage 1 – Ready by July 2025
+      </button>
+    </h2>
+    <div id="collapseStage1" class="accordion-collapse collapse show" aria-labelledby="headingStage1" data-bs-parent="#stage1Accordion">
+      <div class="accordion-body">
         <div class="row g-3">
           <div class="col-12 col-md-4">
             <div class="card feature-card h-100">
@@ -123,6 +130,8 @@
               </div>
             </div>
           </div>
+        </div>
+        <div class="row g-3 justify-content-center mt-1">
           <div class="col-12 col-md-4">
             <div class="card feature-card h-100">
               <div class="card-body text-center">
@@ -145,9 +154,19 @@
           </div>
         </div>
       </div>
-      <!-- Stage 2 -->
-      <div class="mb-5">
-        <h5 class="fw-bold mb-4"><i class="bi bi-stars text-green me-2"></i>Stage 2 – After August 2025</h5>
+    </div>
+  </div>
+</div>
+      <!-- Stage 2 (Accordion) -->
+<div class="accordion mb-5" id="stage2Accordion">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingStage2">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseStage2" aria-expanded="false" aria-controls="collapseStage2">
+        <i class="bi bi-stars text-green me-2"></i>Stage 2 – After August 2025
+      </button>
+    </h2>
+    <div id="collapseStage2" class="accordion-collapse collapse" aria-labelledby="headingStage2" data-bs-parent="#stage2Accordion">
+      <div class="accordion-body">
         <div class="row g-3">
           <div class="col-12 col-md-4">
             <div class="card feature-card h-100">
@@ -181,79 +200,93 @@
           </div>
         </div>
       </div>
-      <!-- Administrative Web Platform -->
-      <div class="admin-platform-section p-4 rounded shadow-sm bg-gold mb-4">
-        <div class="row align-items-center mb-4">
-          <div class="col-md-2 text-center mb-3 mb-md-0">
-            <i class="bi bi-gear-fill display-5 text-primary-adventist"></i>
-          </div>
-          <div class="col-md-10">
-            <h4 class="fw-bold mb-2 text-primary-adventist">Administrative Web Platform</h4>
-            <p class="mb-1"><strong>For Leaders and Administrators:</strong> The Administrative Web Platform is the backbone of the digital ecosystem, empowering church leaders at all levels (club, district, association, union, division) to manage, validate, and oversee all youth ministry operations.</p>
-            <p class="mb-0">This platform ensures structured governance, institutional alignment, and seamless integration with the mobile app—every feature used by youth is powered and validated by leaders through this administrative backbone.</p>
-          </div>
-        </div>
-        <div class="row g-3">
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card feature-card h-100 bg-gold border-0">
-              <div class="card-body text-center">
-                <i class="bi bi-person-check-fill feature-icon text-primary-adventist"></i>
-                <h6 class="card-title mt-2">User & Profile Management</h6>
-                <p class="card-text small">Validate and approve member registrations, manage club changes, and maintain personal records.</p>
+    </div>
+  </div>
+</div>
+      <!-- Administrative Web Platform (Accordion) -->
+      <div class="accordion mb-5" id="adminAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingAdmin">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAdmin" aria-expanded="false" aria-controls="collapseAdmin">
+              <i class="bi bi-gear-fill text-primary-adventist me-2"></i>Administrative Web Platform
+            </button>
+          </h2>
+          <div id="collapseAdmin" class="accordion-collapse collapse" aria-labelledby="headingAdmin" data-bs-parent="#adminAccordion">
+            <div class="accordion-body bg-gold admin-platform-section p-4 rounded shadow-sm">
+              <div class="row align-items-center mb-4">
+                <div class="col-md-2 text-center mb-3 mb-md-0">
+                  <i class="bi bi-gear-fill display-5 text-primary-adventist"></i>
+                </div>
+                <div class="col-md-10">
+                  <h4 class="fw-bold mb-2 text-primary-adventist">Administrative Web Platform</h4>
+                  <p class="mb-1"><strong>For Leaders and Administrators:</strong> The Administrative Web Platform is the backbone of the digital ecosystem, empowering church leaders at all levels (club, district, association, union, division) to manage, validate, and oversee all youth ministry operations.</p>
+                  <p class="mb-0">This platform ensures structured governance, institutional alignment, and seamless integration with the mobile app—every feature used by youth is powered and validated by leaders through this administrative backbone.</p>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card feature-card h-100 bg-gold border-0">
-              <div class="card-body text-center">
-                <i class="bi bi-people-fill feature-icon text-green"></i>
-                <h6 class="card-title mt-2">Club & Director Management</h6>
-                <p class="card-text small">Register, update, and manage clubs and directors, including status and activity.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card feature-card h-100 bg-gold border-0">
-              <div class="card-body text-center">
-                <i class="bi bi-megaphone-fill feature-icon text-primary-adventist"></i>
-                <h6 class="card-title mt-2">News & Announcements Publishing</h6>
-                <p class="card-text small">Publish and schedule news, announcements, and official communications for the mobile app.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card feature-card h-100 bg-gold border-0">
-              <div class="card-body text-center">
-                <i class="bi bi-trophy-fill feature-icon text-gold"></i>
-                <h6 class="card-title mt-2">Challenges & Contests Management</h6>
-                <p class="card-text small">Create, monitor, and evaluate youth challenges and contests, including participant review and winner publication.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card feature-card h-100 bg-gold border-0">
-              <div class="card-body text-center">
-                <i class="bi bi-award-fill feature-icon text-primary-adventist"></i>
-                <h6 class="card-title mt-2">Sponsor & Banner Management</h6>
-                <p class="card-text small">Register and manage sponsors, banners, and their visibility within the mobile app.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card feature-card h-100 bg-gold border-0">
-              <div class="card-body text-center">
-                <i class="bi bi-journal-bookmark-fill feature-icon text-green"></i>
-                <h6 class="card-title mt-2">Bible Content & Event Materials</h6>
-                <p class="card-text small">Upload and manage Bible Connection content, special event materials, and event registrations.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card feature-card h-100 bg-gold border-0">
-              <div class="card-body text-center">
-                <i class="bi bi-share-fill feature-icon text-green"></i>
-                <h6 class="card-title mt-2">Evangelism Tools & Courses</h6>
-                <p class="card-text small">Oversee and report on evangelism tools, courses, and seminars to support the church’s mission.</p>
+              <div class="row g-3">
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="card feature-card h-100 bg-gold border-0">
+                    <div class="card-body text-center">
+                      <i class="bi bi-person-check-fill feature-icon text-primary-adventist"></i>
+                      <h6 class="card-title mt-2">User & Profile Management</h6>
+                      <p class="card-text small">Validate and approve member registrations, manage club changes, and maintain personal records.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="card feature-card h-100 bg-gold border-0">
+                    <div class="card-body text-center">
+                      <i class="bi bi-people-fill feature-icon text-green"></i>
+                      <h6 class="card-title mt-2">Club & Director Management</h6>
+                      <p class="card-text small">Register, update, and manage clubs and directors, including status and activity.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="card feature-card h-100 bg-gold border-0">
+                    <div class="card-body text-center">
+                      <i class="bi bi-megaphone-fill feature-icon text-primary-adventist"></i>
+                      <h6 class="card-title mt-2">News & Announcements Publishing</h6>
+                      <p class="card-text small">Publish and schedule news, announcements, and official communications for the mobile app.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="card feature-card h-100 bg-gold border-0">
+                    <div class="card-body text-center">
+                      <i class="bi bi-trophy-fill feature-icon text-gold"></i>
+                      <h6 class="card-title mt-2">Challenges & Contests Management</h6>
+                      <p class="card-text small">Create, monitor, and evaluate youth challenges and contests, including participant review and winner publication.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="card feature-card h-100 bg-gold border-0">
+                    <div class="card-body text-center">
+                      <i class="bi bi-award-fill feature-icon text-primary-adventist"></i>
+                      <h6 class="card-title mt-2">Sponsor & Banner Management</h6>
+                      <p class="card-text small">Register and manage sponsors, banners, and their visibility within the mobile app.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="card feature-card h-100 bg-gold border-0">
+                    <div class="card-body text-center">
+                      <i class="bi bi-journal-bookmark-fill feature-icon text-green"></i>
+                      <h6 class="card-title mt-2">Bible Content & Event Materials</h6>
+                      <p class="card-text small">Upload and manage Bible Connection content, special event materials, and event registrations.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="card feature-card h-100 bg-gold border-0">
+                    <div class="card-body text-center">
+                      <i class="bi bi-share-fill feature-icon text-green"></i>
+                      <h6 class="card-title mt-2">Evangelism Tools & Courses</h6>
+                      <p class="card-text small">Oversee and report on evangelism tools, courses, and seminars to support the church’s mission.</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -262,11 +295,20 @@
     </div>
   </section>
 
-  <!-- Project Timeline -->
-  <section id="timeline" class="timeline-section py-5 bg-light">
-    <div class="container">
-      <h2 class="text-center section-title mb-5">Project Timeline</h2>
-      <div class="timeline-vertical mx-auto">
+  <!-- Project Timeline (Accordion) -->
+  <div class="accordion mb-5" id="timelineAccordion">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTimeline">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTimeline" aria-expanded="false" aria-controls="collapseTimeline">
+          <i class="bi bi-calendar-event text-primary-adventist me-2"></i>Project Timeline
+        </button>
+      </h2>
+      <div id="collapseTimeline" class="accordion-collapse collapse" aria-labelledby="headingTimeline" data-bs-parent="#timelineAccordion">
+        <div class="accordion-body bg-light">
+          <section id="timeline" class="timeline-section py-5 bg-light">
+            <div class="container">
+              <h2 class="text-center section-title mb-5">Project Timeline</h2>
+              <div class="timeline-vertical mx-auto">
         <div class="timeline-item">
           <div class="timeline-icon bg-primary-adventist"><i class="bi bi-lightbulb-fill"></i></div>
           <div class="timeline-content">
@@ -358,6 +400,10 @@
       </div>
     </div>
   </section>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Vision & Impact -->
   <section id="vision" class="bg-light py-5">
